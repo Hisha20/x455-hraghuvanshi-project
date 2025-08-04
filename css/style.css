@@ -313,17 +313,22 @@ footer {
   justify-content: center;
   gap: 2rem;
   padding: 2rem;
-  background: #fff;
 }
 
 .video-card {
-  background: #fff;
+  background-color: #fff; 
   border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
   overflow: hidden;
   text-align: center;
   width: 280px;
   position: relative;
+}
+
+.video-card p {
+  margin: 0.5rem 0;
+  font-weight: bold;
+  color: #1a3c64;
 }
 
 .video-card img {
@@ -377,7 +382,7 @@ footer {
   border-radius: 8px;
   margin-top: 0.5rem;
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-  max-height: 80px;
+  max-height: 150px;
   overflow-y: auto;
 }
 
