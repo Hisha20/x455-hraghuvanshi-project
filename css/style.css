@@ -293,6 +293,23 @@ footer {
   margin-bottom: 0.5rem;
 }
 
+/* Social Media in Footer */
+footer .social-media {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+footer .social-media a {
+  font-size: 1.5rem;
+  text-decoration: none;
+  transition: transform 0.2s ease;
+}
+
+footer .social-media a:hover {
+  transform: scale(1.2);
+}
 .highlight-link {
   color: #0a4774;
 }
