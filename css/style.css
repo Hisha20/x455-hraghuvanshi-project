@@ -1,0 +1,406 @@
+/* Base styles */
+body {
+  font-family: 'Quicksand', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #fffaf0;
+  color: #3e2f1c;
+}
+
+h1, h2, h3 {
+  font-family: 'Chewy', cursive;
+  /* margin: 0; */
+}
+
+header {
+  background-color: #b7d69d;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 80px;
+  align-items: center;
+  margin: 12px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: auto;
+  padding: 1rem 2rem;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 2.5rem;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: #fffaf0;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+  color:  #5b3a29
+}
+
+.nav-icons {
+  display: flex;
+  gap: 1.2rem;
+}
+
+.nav-icons a {
+  color: #fffaf0;
+  font-size: 1.2rem;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.nav-icons a:hover {
+  color: #f7d44c;
+}
+
+/* Logo */
+.logo-img {
+  height: 64px;
+  width: auto;
+  display: block;
+  padding: 4px;
+}
+
+.hero-img {
+  width: 100%
+}
+
+.hero h1 {
+  color: #1a3c64;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li a {
+  text-decoration: none;
+  font-weight: bolder;
+}
+
+/* Hero section */
+.hero {
+  /* background: #b23a48; */
+  text-align: center;
+  color: #60291a;
+  /* padding: 100px 20px; */
+  position: relative;
+}
+
+.cta-button {
+  position: absolute;
+  top: 45%;   /* distance from top of .hero */
+  left: 20%;    /* distance from left of .hero */
+  margin-top: 25px;
+  background-color: #000000;
+  color: #f5d22b;
+  padding: 0.75rem 1.5rem;
+  text-decoration: none;
+  border-radius: 25px;
+  font-weight: bold;
+  transform: translateX(-35px);
+}
+
+/* About Section */
+.about {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 2rem;
+  gap: 2rem;
+  align-items: center;
+}
+
+.about-section h2 {
+  font-size: 2rem;
+  color: #1a3c64;
+  margin-bottom: 2rem;
+}
+
+.about-description {
+  max-width: none;
+  margin: 1rem auto 2rem;
+  font-size: 1rem;
+  color: #333;
+  line-height: 1.6;
+  text-align: center;
+}
+
+
+.about-grid {
+  display: flex;
+  justify-content: center;
+  gap: 4rem;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+}
+
+.about-text {
+  /* flex: none; */
+  min-width: 100px;
+}
+
+.about-img {
+  flex: none
+  text-align: center;
+}
+
+.about-img img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+}
+
+.about-description {
+  max-width: none;
+  margin: 1rem auto 2rem;
+  font-size: 1rem;
+  color: #333;
+  line-height: 1.6;
+  text-align: center;
+}
+
+.center-title {
+  color: #0a4774;
+  margin-top: 1rem;
+  text-align: center;
+}
+
+/* Shop Section */
+.shop {
+  padding: 2rem;
+  text-align: center;
+}
+
+.shop-hero {
+  background-color: #fcd7b3;
+  padding: 1rem 0;
+  text-align: center;
+}
+
+.shop-hero-img {
+  max-width: 100%;
+  height: auto;
+  /* border: 5px solid #fcd7b3; */
+}
+
+
+.product-grid {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  padding: 2rem;
+}
+
+.elaichi-chai {
+  width: auto;
+  height:180px;
+}
+
+.product-card {
+  background-color: #fff8e1;
+  padding: 1.5rem;
+  width: 280px;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.product-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.buy-button {
+  display: inline-block;
+  margin-top: 1rem;
+  background-color: #000000;
+  color: #f5d22b;
+  padding: 0.5rem 1.2rem;
+  text-decoration: none;
+  border-radius: 20px;
+  font-weight: bold;
+}
+
+.shop-table {
+  width: 90%;
+  margin: 2rem auto;
+  border-collapse: collapse;
+  margin-top: 1rem;
+}
+
+.shop-table tr:nth-child(even){background-color: #f2f2f2;}
+
+.shop-table tr:hover {background-color: #ddd;}
+
+
+ 
+
+.shop-table th, .shop-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+.shop-table th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #474746;
+  color: #b7d69d;
+}
+
+
+/* Footer */
+footer {
+  background-color:#b7d69d;
+  padding: 2rem;
+  text-align: center;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-bottom: 1rem;
+}
+.bottom-bar {
+  background: #2c2c3e;
+  text-align: center;
+  padding: 1rem;
+  color: white;
+}
+
+.footer-links h4 {
+  margin-bottom: 0.5rem;
+}
+
+.highlight-link {
+  color: #0a4774;
+}
+
+.link {
+  color: #60291a;
+}
+
+.link:hover {
+  text-decoration: underline;
+}
+/* Existing styles should remain. Add this below or in a new section */
+
+/* Video Gallery */
+.video-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  padding: 2rem;
+  background: #fff;
+}
+
+.video-card {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  overflow: hidden;
+  text-align: center;
+  width: 280px;
+  position: relative;
+}
+
+.video-card img {
+  width: 100%;
+  height: auto;
+}
+
+.play-button {
+  position: absolute;
+  top: 40%;
+  left: 45%;
+  font-size: 2rem;
+  color: red;
+  pointer-events: none;
+}
+
+/* Accordion Section */
+.accordion {
+  margin-bottom: 12px;
+}
+
+.accordion-section {
+  padding: 2rem;
+}
+
+.accordion-section h2 {
+  text-align: center;
+  color: #1a3c64;
+}
+
+.accordion-toggle {
+  background: white;
+  border: none;
+  padding: 1rem;
+  width: 100%;
+  text-align: left;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.accordion-content {
+  display: none;
+  padding: 1rem;
+  background: white;
+  border-radius: 8px;
+  margin-top: 0.5rem;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  max-height: 80px;
+  overflow-y: auto;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .video-gallery {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .video-card {
+    width: 90%;
+  }
+
+  .play-button {
+    left: 43%;
+    top: 40%;
+  }
+}
+
+/* center the carousel slide */
+.mySlides {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 65%;
+}

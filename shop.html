@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Shop - Chai Garammm</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <link rel="stylesheet" href="./css/w3.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Chewy&family=Quicksand&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/a076d05399.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- mobile sidebar start -->
+    <nav
+      class="w3-sidebar w3-bar-block w3-white w3-card w3-animate-left w3-hide-medium w3-hide-large"
+      style="display: none"
+      id="mySidebar"
+    >
+      <a
+        href="javascript:void(0)"
+        onclick="w3_close()"
+        class="w3-bar-item w3-button w3-large w3-padding-16"
+        >Close &times;</a
+      >
+      <a href="index.html" onclick="w3_close()" class="w3-bar-item w3-button link"
+        >Menu</a
+      >
+      <a href="about.html" onclick="w3_close()" class="w3-bar-item w3-button link"
+        >About</a
+      >
+      <a href="shop.html" onclick="w3_close()" class="w3-bar-item w3-button highlight-link"
+        >Shop</a
+      >
+      <a href="events.html" onclick="w3_close()" class="w3-bar-item w3-button link"
+        >Events</a
+      >
+      <a href="contact.html" onclick="w3_close()" class="w3-bar-item w3-button link"
+        >Contact</a
+      >
+    </nav>
+    <!-- mobile sidebar end -->
+<header>
+      <a href="index.html">
+        <img
+          src="images/chaigaram-logo.png"
+          alt="Chai Garammm Logo"
+          class="logo-img"
+        />
+      </a>
+
+      <nav class="w3-hide-small">
+        <ul>
+          <li><a href="index.html" class="link">Menu</a></li>
+          <li><a href="about.html" class="link">About</a></li>
+          <li><a href="shop.html" class="highlight-link">Shop</a></li>
+          <li><a href="events.html" class="link">Events</a></li>
+          <li><a href="contact.html" class="link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-icons">
+        <div class="w3-hide-small">
+          <a class="w3-padding-large w3-right"
+            ><i class="fa fa-shopping-basket"></i
+          ></a>
+          <a class="w3-padding-large w3-hide-small w3-right"
+            ><i class="fa fa-search"></i
+          ></a>
+        </div>
+        <div class="w3-hide-medium w3-hide-large">
+          <a class="w3-padding-large w3-right"
+            ><i class="fa fa-phone"></i
+          ></a>
+          <a class="w3-padding-large w3-right"
+            ><i class="fa fa-at"></i
+          ></a>
+        </div>
+      </div>
+
+      <a
+        href="javascript:void(0)"
+        class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium w3-margin-right"
+        onclick="w3_open()"
+      >
+        <!-- use the hamburger icon (menu icon) from font-awesome.min.css -->
+        <i class="fa fa-bars"></i>
+      </a>
+    </header>
+
+    <!-- Carousel Slideshow -->
+    <section class="w3-margin-top w3-margin-bottom">
+      <div>
+        <img
+          class="mySlides"
+          src="./Images/elaichi-chai.jpeg"
+          style="width: 100%"
+        />
+        <img
+          class="mySlides"
+          src="./Images/ginger-chai.jpg"
+          style="width: 100%; display: none"
+        />
+        <img
+          class="mySlides"
+          src="./Images/elaichi-chai.jpeg"
+          style="width: 100%; display: none"
+        />
+        <img
+          class="mySlides"
+          src="./Images/ginger-chai.jpg"
+          style="width: 100%; display: none"
+        />
+        <img
+          class="mySlides"
+          src="./Images/elaichi-chai.jpeg"
+          style="width: 100%; display: none"
+        />
+        <img
+          class="mySlides"
+          src="./Images/ginger-chai.jpg"
+          style="width: 100%; display: none"
+        />
+      </div>
+    </section>
+    <!-- Carousel Slideshow End -->
+
+    <!-- Carousel thumbnail begin-->
+    <div class="w3-row">
+      <div class="w3-col s2">
+        <!-- "currentDiv(1)" link to 1st slide -->
+        <!-- demo class is used by a javascript function to turn off the opacity effect -->
+        <img
+          class="demo w3-opacity w3-hover-opacity-off"
+          src="./Images/elaichi-chai.jpeg"
+          style="width: 100%; cursor: pointer; padding: 7px"
+          onclick="currentDiv(1)"
+        />
+      </div>
+      <div class="w3-col s2">
+        <!-- "currentDiv(2)" link to 2nd slide -->
+        <!-- demo class is used by a javascript function to turn off the opacity effect -->
+        <img
+          class="demo w3-opacity w3-hover-opacity-off"
+          src="./Images/ginger-chai.jpg"
+          style="width: 100%; cursor: pointer; padding: 7px"
+          onclick="currentDiv(2)"
+        />
+      </div>
+      <div class="w3-col s2">
+        <!-- "currentDiv(3)" link to 3rd slide -->
+        <!-- demo class is used by a javascript function to turn off the opacity effect -->
+        <img
+          class="demo w3-opacity w3-hover-opacity-off"
+          src="./Images/elaichi-chai.jpeg"
+          style="width: 100%; cursor: pointer; padding: 7px"
+          onclick="currentDiv(3)"
+        />
+      </div>
+      <div class="w3-col s2">
+        <!-- "currentDiv(4)" link to 4th slide -->
+        <!-- demo class is used by a javascript function to turn off the opacity effect -->
+        <img
+          class="demo w3-opacity w3-hover-opacity-off"
+          src="./Images/ginger-chai.jpg"
+          style="width: 100%; cursor: pointer; padding: 7px"
+          onclick="currentDiv(4)"
+        />
+      </div>
+      <div class="w3-col s2">
+        <!-- "currentDiv(4)" link to 4th slide -->
+        <!-- demo class is used by a javascript function to turn off the opacity effect -->
+        <img
+          class="demo w3-opacity w3-hover-opacity-off"
+          src="./Images/elaichi-chai.jpeg"
+          style="width: 100%; cursor: pointer; padding: 7px"
+          onclick="currentDiv(4)"
+        />
+      </div>
+      <div class="w3-col s2">
+        <!-- "currentDiv(4)" link to 4th slide -->
+        <!-- demo class is used by a javascript function to turn off the opacity effect -->
+        <img
+          class="demo w3-opacity w3-hover-opacity-off"
+          src="./Images/ginger-chai.jpg"
+          style="width: 100%; cursor: pointer; padding: 7px"
+          onclick="currentDiv(4)"
+        />
+      </div>
+      <!-- add carousel thumbnail end-->
+    </div>
+
+    <section>
+      <h2 class="center-title">Our Chai Collection</h2>
+      <div class="product-grid">
+        <div class="product-card">
+          <img src="images/elaichi-chai.jpeg" alt="Elaichi Chai" />
+          <h3>Elaichi Chai</h3>
+          <p>Delightful blend with aromatic cardamom.</p>
+          <a href="#" class="buy-button">Buy Now</a>
+        </div>
+        <div class="product-card">
+          <img src="images/ginger-chai.jpg" alt="Ginger Chai" />
+          <h3>Ginger Chai</h3>
+          <p>Spicy and refreshing — a winter must-have!</p>
+          <a href="#" class="buy-button">Buy Now</a>
+        </div>
+        <div class="product-card">
+          <img src="images/masala-chai.png" alt="Masala Chai" />
+          <h3>Masala Chai</h3>
+          <p>Bold flavors of Indian spices in every sip.</p>
+          <a href="#" class="buy-button">Buy Now</a>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div>
+        <h2 class="center-title">Chai Accessories</h2>
+      </div>
+    </section>
+
+    <section class="content-section">
+      <table class="shop-table">
+        <thead>
+          <tr>
+            <th>Utensil</th>
+            <th>Type</th>
+            <th>Name</th>
+            <th>Size</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Strainer</td>
+            <td>Fine Mesh</td>
+            <td>Stainless Steel Strainer</td>
+            <td>3-inch Diametre</td>
+          </tr>
+          <tr>
+            <td>Pot</td>
+            <td>Saucepan</td>
+            <td>Copper Bottom Chai Pot</td>
+            <td>1.5 ltrs</td>
+          </tr>
+          <tr>
+            <td>Mug</td>
+            <td>Ceramic</td>
+            <td>Hand-painted Floral Mug</td>
+            <td>300 ml</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <footer>
+      <div>Also Available On: 🛵</div>
+      <div class="footer-links">
+        <div>
+          <h4>Quick Links</h4>
+          <a href="#">Our cafes</a><br />
+          <a href="#">Careers</a><br />
+          <a href="#">Privacy Policy</a>
+        </div>
+        <div>
+          <h4>Contact Us</h4>
+          <p>Email: hello@chaigarammm.com</p>
+        </div>
+      </div>
+    </footer>
+    <div class="bottom-bar">© 2025 ChaiGarammm. All rights reserved.</div>
+
+    <script>
+      // carousel slideshow begin
+      var myIndex = 0;
+      carousel();
+      function carousel() {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";
+        }
+        myIndex++;
+        if (myIndex > x.length) {
+          myIndex = 1;
+        }
+        x[myIndex - 1].style.display = "block";
+        setTimeout(carousel, 5000); // Change image every 5 seconds
+      }
+
+      // slideshow - carousel
+      // hook each carousel button
+      function currentDiv(n) {
+        showDivs((slideIndex = n));
+        myIndex = n;
+      }
+
+      function showDivs(n) {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("demo");
+        if (n > x.length) {
+          slideIndex = 1;
+        }
+        if (n < 1) {
+          slideIndex = x.length;
+        }
+        for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" w3-opacity-off", "");
+        }
+        x[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " w3-opacity-off";
+      }
+      // carousel slideshow end
+
+      // Toggle between showing and hiding the sidebar when clicking the menu icon
+      var mySidebar = document.getElementById("mySidebar");
+
+      function w3_open() {
+        if (mySidebar.style.display === "block") {
+          mySidebar.style.display = "none";
+        } else {
+          mySidebar.style.display = "block";
+        }
+      }
+
+      // Close the sidebar with the close button
+      function w3_close() {
+        mySidebar.style.display = "none";
+      }
+    </script>
+  </body>
+</html>

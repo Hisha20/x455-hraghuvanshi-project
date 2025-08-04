@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>About - Chai Garammm</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="./css/w3.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Chewy&family=Quicksand&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/a076d05399.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- mobile sidebar start -->
+    <nav
+      class="w3-sidebar w3-bar-block w3-white w3-card w3-animate-left w3-hide-medium w3-hide-large"
+      style="display: none"
+      id="mySidebar"
+    >
+      <a
+        href="javascript:void(0)"
+        onclick="w3_close()"
+        class="w3-bar-item w3-button w3-large w3-padding-16"
+        >Close &times;</a
+      >
+      <a href="index.html" onclick="w3_close()" class="w3-bar-item w3-button link"
+        >Menu</a
+      >
+      <a href="about.html" onclick="w3_close()" class="w3-bar-item w3-button highlight-link"
+        >About</a
+      >
+      <a href="shop.html" onclick="w3_close()" class="w3-bar-item w3-button link"
+        >Shop</a
+      >
+      <a href="events.html" onclick="w3_close()" class="w3-bar-item w3-button link"
+        >Events</a
+      >
+      <a href="contact.html" onclick="w3_close()" class="w3-bar-item w3-button link"
+        >Contact</a
+      >
+    </nav>
+    <!-- mobile sidebar end -->
+<header>
+      <a href="index.html">
+        <img
+          src="images/chaigaram-logo.png"
+          alt="Chai Garammm Logo"
+          class="logo-img"
+        />
+      </a>
+
+      <nav class="w3-hide-small">
+        <ul>
+          <li><a href="index.html" class="link">Menu</a></li>
+          <li><a href="about.html" class="highlight-link">About</a></li>
+          <li><a href="shop.html" class="link">Shop</a></li>
+          <li><a href="events.html" class="link">Events</a></li>
+          <li><a href="contact.html" class="highlight-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-icons">
+        <div class="w3-hide-small">
+          <a class="w3-padding-large w3-right"
+            ><i class="fa fa-shopping-basket"></i
+          ></a>
+          <a class="w3-padding-large w3-hide-small w3-right"
+            ><i class="fa fa-search"></i
+          ></a>
+        </div>
+        <div class="w3-hide-medium w3-hide-large">
+          <a class="w3-padding-large w3-right"
+            ><i class="fa fa-phone"></i
+          ></a>
+          <a class="w3-padding-large w3-right"
+            ><i class="fa fa-at"></i
+          ></a>
+        </div>
+      </div>
+
+      <a
+        href="javascript:void(0)"
+        class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium w3-margin-right"
+        onclick="w3_open()"
+      >
+        <!-- use the hamburger icon (menu icon) from font-awesome.min.css -->
+        <i class="fa fa-bars"></i>
+      </a>
+    </header>
+
+    <section class="about">
+      <div class="about-text">
+        <h2 class="center-title">Why Chai Garammm?</h2>
+        <p class="about-description">
+          Chai Garammm isn’t just about tea—it’s about reliving the comforting
+          moments that a warm cup of chai brings. Born from a love for authentic
+          Indian flavors, we serve chai that feels like home, no matter where
+          you are. Our blends are rooted in tradition, slow-brewed with care,
+          and infused with love. Whether it’s the first sip in the morning or a
+          calming break in the evening, Chai Garammm is your companion. We
+          believe chai is more than a beverage—it’s a feeling, a ritual, a
+          connection. That’s why every cup is crafted to warm hearts, spark
+          memories, and bring people together.
+        </p>
+      </div>
+      <div class="about-img">
+        <img src="images/Story.jpg" alt="About Chai Garammm" />
+      </div>
+
+      <div class="about-text">
+        <h3 class="center-title">Chai Packaging</h3>
+        <p class="about-description">
+          At Chai Garammm, our packaging is a tribute to the soulful experience
+          of Indian chai culture. We use earthy tones, hand-drawn graphics, and
+          nostalgic textures to reflect authenticity. Each cup, label, and box
+          is thoughtfully designed to evoke warmth and connection. Our carry
+          kits and glass holders bring a modern twist to the classic tea stall
+          vibe. It’s not just packaging—it’s storytelling with every sip you
+          take.
+        </p>
+      </div>
+      <div class="about-img">
+        <img src="images/Packaging.jpg" alt="About Chai Garammm" />
+      </div>
+    </section>
+
+    <footer>
+      <div>Also Available On: 🛵</div>
+      <div class="footer-links">
+        <div>
+          <h4>Quick Links</h4>
+          <a href="#">Our cafes</a><br />
+          <a href="#">Careers</a><br />
+          <a href="#">Privacy Policy</a>
+        </div>
+        <div>
+          <h4>Contact Us</h4>
+          <p>Email: hello@chaigarammm.com</p>
+        </div>
+      </div>
+    </footer>
+    <div class="bottom-bar">© 2025 ChaiGarammm. All rights reserved.</div>
+
+    <script>
+      // Toggle between showing and hiding the sidebar when clicking the menu icon
+      var mySidebar = document.getElementById("mySidebar");
+
+      function w3_open() {
+        if (mySidebar.style.display === "block") {
+          mySidebar.style.display = "none";
+        } else {
+          mySidebar.style.display = "block";
+        }
+      }
+
+      // Close the sidebar with the close button
+      function w3_close() {
+        mySidebar.style.display = "none";
+      }
+    </script>
+  </body>
+</html>

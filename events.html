@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Shop - Chai Garammm</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="./css/w3.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Chewy&family=Quicksand&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/a076d05399.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  </head>
+  <body>
+    <!-- mobile sidebar start -->
+    <nav
+      class="w3-sidebar w3-bar-block w3-white w3-card w3-animate-left w3-hide-medium w3-hide-large"
+      style="display: none"
+      id="mySidebar"
+    >
+      <a
+        href="javascript:void(0)"
+        onclick="w3_close()"
+        class="w3-bar-item w3-button w3-large w3-padding-16"
+        >Close &times;</a
+      >
+      <a
+        href="index.html"
+        onclick="w3_close()"
+        class="w3-bar-item w3-button link"
+        >Menu</a
+      >
+      <a
+        href="about.html"
+        onclick="w3_close()"
+        class="w3-bar-item w3-button link"
+        >About</a
+      >
+      <a
+        href="shop.html"
+        onclick="w3_close()"
+        class="w3-bar-item w3-button link"
+        >Shop</a
+      >
+      <a
+        href="events.html"
+        onclick="w3_close()"
+        class="w3-bar-item w3-button highlight-link"
+        >Events</a
+      >
+      <a
+        href="contact.html"
+        onclick="w3_close()"
+        class="w3-bar-item w3-button link"
+        >Contact</a
+      >
+    </nav>
+    <!-- mobile sidebar end -->
+    <header>
+      <a href="index.html">
+        <img
+          src="images/chaigaram-logo.png"
+          alt="Chai Garammm Logo"
+          class="logo-img"
+        />
+      </a>
+
+      <nav class="w3-hide-small">
+        <ul>
+          <li><a href="index.html" class="link">Menu</a></li>
+          <li><a href="about.html" class="link">About</a></li>
+          <li><a href="shop.html" class="link">Shop</a></li>
+          <li><a href="events.html" class="highlight-link">Events</a></li>
+          <li><a href="contact.html" class="link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-icons">
+        <div class="w3-hide-small">
+          <a class="w3-padding-large w3-right"
+            ><i class="fa fa-shopping-basket"></i
+          ></a>
+          <a class="w3-padding-large w3-hide-small w3-right"
+            ><i class="fa fa-search"></i
+          ></a>
+        </div>
+        <div class="w3-hide-medium w3-hide-large">
+          <a class="w3-padding-large w3-right"><i class="fa fa-phone"></i></a>
+          <a class="w3-padding-large w3-right"><i class="fa fa-at"></i></a>
+        </div>
+      </div>
+
+      <a
+        href="javascript:void(0)"
+        class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium w3-margin-right"
+        onclick="w3_open()"
+      >
+        <!-- use the hamburger icon (menu icon) from font-awesome.min.css -->
+        <i class="fa fa-bars"></i>
+      </a>
+    </header>
+
+    <section class="shop-hero">
+      <img
+        src="images/shop-hero.png"
+        alt="Shop Hero Image"
+        class="shop-hero-img"
+      />
+    </section>
+    <section
+      class="hero"
+      style="background-image: url('images/hero-events.jpg')"
+    >
+      <h1>Watch & Learn</h1>
+    </section>
+
+    <section class="video-gallery">
+      <div class="video-card">
+        <p>Mastering Chai Brewing</p>
+        <iframe
+          width="250"
+          src="https://www.youtube.com/embed/iogehqrRM0M?si=dg7p616cJFmok3SC"
+        ></iframe>
+      </div>
+      <div>
+        <p>Innovations in Chai Packaging</p>
+        <iframe
+          width="250"
+          src="https://www.youtube.com/embed/iogehqrRM0M?si=dg7p616cJFmok3SC"
+        ></iframe>
+      </div>
+      <div class="video-card">
+        <p>Innovations in Chai Packaging</p>
+        <iframe
+          width="250"
+          src="https://www.youtube.com/embed/iogehqrRM0M?si=dg7p616cJFmok3SC"
+        ></iframe>
+      </div>
+    </section>
+
+    <section class="accordion-section">
+      <h2>Insights & Knowledge</h2>
+      <div class="accordion">
+        <button class="accordion-toggle">
+          Why Kulhad? The Earthen Charm of Chai <span class="arrow">▼</span>
+        </button>
+        <div class="accordion-content">
+          Kulhads are eco-friendly clay cups that not only add an earthy aroma
+          but are also biodegradable, making your chai experience traditional
+          and sustainable.
+        </div>
+      </div>
+      <div class="accordion">
+        <button class="accordion-toggle">
+          Why Kulhad? The Earthen Charm of Chai <span class="arrow">▼</span>
+        </button>
+        <div class="accordion-content">
+          Kulhads are eco-friendly clay cups that not only add an earthy aroma
+          but are also biodegradable, making your chai experience traditional
+          and sustainable.
+        </div>
+      </div>
+      <div class="accordion">
+        <button class="accordion-toggle">
+          Why Kulhad? The Earthen Charm of Chai <span class="arrow">▼</span>
+        </button>
+        <div class="accordion-content">
+          Kulhads are eco-friendly clay cups that not only add an earthy aroma
+          but are also biodegradable, making your chai experience traditional
+          and sustainable. Kulhads are eco-friendly clay cups that not only add
+          an earthy aroma but are also biodegradable, making your chai
+          experience traditional and sustainable. Kulhads are eco-friendly clay
+          cups that not only add an earthy aroma but are also biodegradable,
+          making your chai experience traditional and sustainable. Kulhads are
+          eco-friendly clay cups that not only add an earthy aroma but are also
+          biodegradable, making your chai experience traditional and
+          sustainable. Kulhads are eco-friendly clay cups that not only add an
+          earthy aroma but are also biodegradable, making your chai experience
+          traditional and sustainable. Kulhads are eco-friendly clay cups that
+          not only add an earthy aroma but are also biodegradable, making your
+          chai experience traditional and sustainable.
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div>Also Available On: 🛵</div>
+      <div class="footer-links">
+        <div>
+          <h4>Quick Links</h4>
+          <a href="#">Our cafes</a><br />
+          <a href="#">Careers</a><br />
+          <a href="#">Privacy Policy</a>
+        </div>
+        <div>
+          <h4>Contact Us</h4>
+          <p>Email: hello@chaigarammm.com</p>
+        </div>
+      </div>
+    </footer>
+    <div class="bottom-bar">© 2025 ChaiGarammm. All rights reserved.</div>
+
+    <script>
+      // Accordion script
+      $(document).ready(function () {
+        $(".accordion-toggle").click(function () {
+          var $content = $(this).next(".accordion-content");
+          var $arrow = $(this).find(".arrow");
+          $content.slideToggle(200, function () {
+            $arrow.text($content.is(":visible") ? "▲" : "▼");
+          });
+        });
+      });
+
+      // Toggle between showing and hiding the sidebar when clicking the menu icon
+      var mySidebar = document.getElementById("mySidebar");
+
+      function w3_open() {
+        if (mySidebar.style.display === "block") {
+          mySidebar.style.display = "none";
+        } else {
+          mySidebar.style.display = "block";
+        }
+      }
+
+      // Close the sidebar with the close button
+      function w3_close() {
+        mySidebar.style.display = "none";
+      }
+    </script>
+  </body>
+</html>
